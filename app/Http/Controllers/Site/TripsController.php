@@ -11,7 +11,7 @@ class TripsController extends Controller
     public function index()
     {
         $headerdetails = Tripsdetails::limit(7)->get();
-        $tripsdetails = Tripsdetails::paginate(9);
+        $tripsdetails = Tripsdetails::paginate(12);
         return view('site.trips', compact("tripsdetails", 'headerdetails'));
     }
 
