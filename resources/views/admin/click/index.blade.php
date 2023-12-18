@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 @section('title')
-    Часто задаваемые вопросы
+    Click
 @endsection
 @section('main')
 <div class="wrapper">
@@ -9,7 +9,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
         <div class="breadcrumb">
-            <h1 class="mr-2">Часто задаваемые вопросы</h1>
+            <h1 class="mr-2">Click</h1>
             <ul>
 {{--                <li><a style="color: blue; border-bottom: 1px solid blue " href="{{ route('faqs.create') }}">Добавить новые данные</a></li>--}}
             </ul>
