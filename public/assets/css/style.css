@@ -4021,6 +4021,8 @@ header .header-style-three .nav-right .nav-right-hotline .hotline-info h6 a {
 }
 
 .newslatter-wrapper {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(45, 55, 60, 0.8)), to(rgba(45, 55, 60, 0.8))), url('../images/banner/newslatter-bg.png');
+    background: linear-gradient(rgba(45, 55, 60, 0.8) 100%, rgba(45, 55, 60, 0.8) 100%), url('../images/banner/newslatter-bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -43,9 +43,9 @@
                 <div class="triangle"></div>
             </li>
 
-{{--            <li class="nav-item"><a class="nav-item-hold" href="{{ route('click.index') }}"><img width="100px" src="{{ asset('assets/images/click.png') }}" alt=""><span class="nav-text"></span></a>--}}
-{{--                <div class="triangle"></div>--}}
-{{--            </li>--}}
+            <li class="nav-item"><a class="nav-item-hold" href="{{ route('click.index') }}"><img width="100px" src="{{ asset('assets/images/click.png') }}" alt=""><span class="nav-text"></span></a>
+                <div class="triangle"></div>
+            </li>
 
             <li class="nav-item"><a class="nav-item-hold" href="{{ route('settings.index') }}"><i class="nav-icon fas fa-wrench"></i><span class="nav-text">Настройка сайта</span></a>
                 <div class="triangle"></div>
