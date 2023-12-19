@@ -1,14 +1,12 @@
 <?php
 
-use App\Http\Controllers\Site\ClickController;
-use App\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Site\HomeController;
 use App\Http\Controllers\Site\AboutusController;
 use App\Http\Controllers\Site\ContactController;
 
-use \App\Http\Controllers\Admin\AdminController;
-use \App\Http\Controllers\Admin\BannersController;
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\BannersController;
 use App\Http\Controllers\Admin\BeautifuladdresController;
 use App\Http\Controllers\Admin\CustomerfeedbackController;
 use App\Http\Controllers\Admin\CustomerimagesController;
@@ -16,14 +14,13 @@ use App\Http\Controllers\Admin\FaqsController as AdminFaqsController;
 use App\Http\Controllers\Admin\LocationController;
 use App\Http\Controllers\Admin\OurcompanyController;
 use App\Http\Controllers\Admin\ResultsController;
-use \App\Http\Controllers\Admin\SettingsController;
+use App\Http\Controllers\Admin\SettingsController;
 use App\Http\Controllers\Admin\TripsdetailsController;
 use App\Http\Controllers\Admin\WhyusController;
 use App\Http\Controllers\Site\FaqsController;
 use App\Http\Controllers\Site\TripsController;
 use App\Http\Controllers\Admin\ClickTransUserController;
-use Illuminate\Support\Facades\Redirect;
-use \Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 
 Route::group(['prefix' => LaravelLocalization::setLocale(),
