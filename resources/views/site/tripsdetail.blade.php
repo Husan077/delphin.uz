@@ -112,7 +112,7 @@
                                 <input type="hidden" name="merchant_id" value="{{ config('app.click_merchant_id') }}">
                                 <input type="hidden" name="merchant_user_id" value="{{ config('app.click_user_id') }}">
                                 <input type="hidden" name="service_id" value="{{ config('app.click_service_id') }}">
-                                <input type="hidden" name="trip_id" value="{{ $slug->id }}">
+                                <input type="hidden" name="trip_id" value="{{ $slug->title_en }}">
                                 <input type="hidden" name="amount" value="{{ $slug->price }}">
                                 <input type="hidden" name="return_url" value="{{ route('tripsDetail', $slug->title_en) }}">
                                 <img width="100px" src="{{ asset('assets/images/click.png') }}" alt="">
