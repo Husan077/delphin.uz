@@ -16,6 +16,7 @@ use Telegram\Bot\Laravel\Facades\Telegram;
 
 class HomeController extends Controller
 {
+
     public function index()
     {
         $banners = Banners::all();
@@ -54,7 +55,7 @@ class HomeController extends Controller
                     . "<b>Сообщение</b>: $request->message\n"
 
             ]);
-            Alert::success('Обращение принято', 'Скоро мы свяжемся с вами');
+            Alert::success('Оплата принято', 'Скоро мы свяжемся с вами');
             return redirect()->back();
         }
 
