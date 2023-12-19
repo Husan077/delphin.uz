@@ -114,7 +114,7 @@
                                 <input type="hidden" name="service_id" value="{{ config('app.click_service_id') }}">
                                 <input type="hidden" name="trip_id" value="{{ $slug->title_en }}">
                                 <input type="hidden" name="amount" value="{{ $slug->price }}">
-                                <input type="hidden" name="return_url" value="https://www.delphin.uz">
+                                <input type="hidden" name="return_url" value="{{ route('tripsDetail', $slug->title_en) }}">
                                 <img width="100px" src="{{ asset('assets/images/click.png') }}" alt="">
                                 <div class="booking-form-wrapper">
                                     <div class="custom-input-group">
