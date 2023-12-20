@@ -92,7 +92,7 @@
                     <aside class="package-widget-style-2 widget-form mt-30">
                         <div class="widget-title text-center d-flex justify-content-between">
                             <h4>@lang('main.make_an_order')</h4>
-                            <h3 class="widget-lavel">{{ $slug->price }} @lang('main.price')</h3>
+                            <h3 class="widget-lavel">{{ number_format($slug->price, 0, '.', ' ') }} @lang('main.price')</h3>
                         </div>
                         <div class="widget-body">
 {{--                            <form action="{{ route('clickSend') }}" method="post" target="_blank">--}}
@@ -112,9 +112,9 @@
                                 <input type="hidden" name="merchant_id" value="{{ config('app.click_merchant_id') }}">
                                 <input type="hidden" name="merchant_user_id" value="{{ config('app.click_user_id') }}">
                                 <input type="hidden" name="service_id" value="{{ config('app.click_service_id') }}">
-                                <input type="hidden" name="trip_id" value="{{ $slug->title_en }}">
+                                <input type="hidden" name="trip_id" value="{{ $slug->{'title_' . $locale} }}">
                                 <input type="hidden" name="amount" value="{{ $slug->price }}">
-                                <input type="hidden" name="return_url" value="{{ route('tripsDetail', $slug->title_en) }}">
+                                <input type="hidden" name="return_url" value="{{ route('tripsDetail', $slug->{'title_' . $locale}) }}">
                                 <img width="100px" src="{{ asset('assets/images/click.png') }}" alt="">
                                 <div class="booking-form-wrapper">
                                     <div class="custom-input-group">

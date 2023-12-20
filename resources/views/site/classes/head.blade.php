@@ -3,7 +3,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:site_name" content="Delphin.uz" />
-    <meta name="google-site-verification" content="ov24Yq4H_4rVl---a_avTtsRAwkSBdcyise80u6IooE" />
     <meta property="og:url" content="{{ url()->current() }}"/>
     @yield('meta')
 
