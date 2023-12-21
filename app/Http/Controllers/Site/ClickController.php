@@ -24,7 +24,7 @@ class ClickController extends Controller
 
 
         $trip = Tripsdetails::query()
-            ->where('title_en', $request->merchant_trans_id)
+            ->where('id', $request->merchant_trans_id)
             ->first();
 
         $transaction = ClickTransaction::query()
