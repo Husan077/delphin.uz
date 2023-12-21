@@ -16,7 +16,7 @@ class ClickController extends Controller
 
     public function prepare(Request $request): JsonResponse
     {
-        Log::channel('click')->debug('click_pre '. json_encode($request));
+        Log::channel('click')->error('click_pre '. json_encode($request));
         $result = [
             'click_trans_id' => $request->click_trans_id,
             'merchant_trans_id' => $request->merchant_trans_id,
@@ -94,7 +94,7 @@ class ClickController extends Controller
         $result['error'] = 0;
         $result['error_note'] = "Success";
         $result['merchant_prepare_id'] =  $transaction->id;
-        Log::channel('click')->debug('click_pre '. json_encode($result));
+        Log::channel('click')->error('click_pre '. json_encode($result));
 
         return response()->json($result);
 
@@ -135,7 +135,7 @@ class ClickController extends Controller
 
         if ( $sign_string !== $request->sign_string) {
             $result['error'] = ClickException::TRANSACTION_NOT_FOUND;
-            Log::channel('click')->debug('click_com '.json_encode($result));
+            Log::channel('click')->error('click_com '.json_encode($result));
         }
 
         $trip = Tripsdetails::query()
@@ -222,7 +222,7 @@ class ClickController extends Controller
         $result['error'] = 0;
         $result['error_note'] = 'Success';
         $result['merchant_confirm_id'] =  $transaction->id;
-        Log::channel('click')->debug('click_com '.json_encode($result));
+        Log::channel('click')->error('click_com '.json_encode($result));
         return response()->json($result);
     }
 }
