@@ -16,7 +16,7 @@ class ClickController extends Controller
 
     public function prepare(Request $request): JsonResponse
     {
-        Log::channel('click')->error('click_pre '. json_encode($request));
+        Log::channel('click')->info('click_pre ', $request->all());
         $result = [
             'click_trans_id' => $request->click_trans_id,
             'merchant_trans_id' => $request->merchant_trans_id,
@@ -104,6 +104,8 @@ class ClickController extends Controller
 
     public function complete(Request $request): JsonResponse
     {
+        Log::channel('click')->info('click_complete', $request->all());
+
         Log::error('click_data '.json_encode($request));
         $result = [
             'click_trans_id' => $request->click_trans_id,
