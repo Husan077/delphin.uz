@@ -95,19 +95,7 @@
                             <h3 class="widget-lavel">{{ number_format($slug->price, 0, '.', ' ') }} @lang('main.price')</h3>
                         </div>
                         <div class="widget-body">
-{{--                            <form action="{{ route('clickSend') }}" method="post" target="_blank">--}}
-{{--                                @csrf--}}
-{{--                                <input type="hidden" name="merchant_id" value="{{ config('app.click_merchant_id') }}">--}}
-{{--                                <input type="hidden" name="merchant_user_id" value="{{ config('app.click_user_id') }}">--}}
-{{--                                <input type="hidden" name="service_id" value="{{ config('app.click_service_id') }}">--}}
-{{--                                <input type="hidden" name="trip_id" value="{{ $slug->id }}">--}}
-{{--                                <input type="hidden" name="amount" value="{{ $slug->price }}">--}}
-{{--                                <input type="hidden" name="return_url" value="{{ route('tripsDetail', $slug->title_en) }}">--}}
-{{--                                <img width="100px" src="{{ asset('assets/images/click.png') }}" alt="">--}}
-{{--                                <button type="submit">Send</button>--}}
-{{--                            </form>--}}
-
-                            <form id="contact" action="{{ route('contact.send') }}" method="POST"  enctype="multipart/form-data">
+                            <form id="contact" action="{{ route('contact.send') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <input type="hidden" name="merchant_id" value="{{ config('app.click_merchant_id') }}">
                                 <input type="hidden" name="merchant_user_id" value="{{ config('app.click_user_id') }}">
@@ -137,33 +125,7 @@
 
 
                                     <div class="row">
-{{--                                        <div class="col-sm-6">--}}
-{{--                                            <div class="custom-input-group">--}}
-{{--                                                <i class="bi bi-chevron-down"></i>--}}
-{{--                                                <select name="adults"  id="truist-adult" >--}}
-{{--                                                    <option selected>@lang('main.adults')</option>--}}
-{{--                                                    <option value="1"> 1</option>--}}
-{{--                                                    <option value="2"> 2</option>--}}
-{{--                                                    <option value="3"> 3</option>--}}
-{{--                                                    <option value="4"> 4</option>--}}
-{{--                                                    <option value="5"> 5</option>--}}
-{{--                                                    <option value="6"> 6</option>--}}
-{{--                                                </select>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
                                         <div class="col-sm-6">
-{{--                                            <div class="custom-input-group">--}}
-{{--                                                <i class="bi bi-chevron-down"></i>--}}
-{{--                                                <select name="children"  id="children">--}}
-{{--                                                    <option selected>@lang('main.children')</option>--}}
-{{--                                                    <option value="1"> 1</option>--}}
-{{--                                                    <option value="2"> 2</option>--}}
-{{--                                                    <option value="3"> 3</option>--}}
-{{--                                                    <option value="4"> 4</option>--}}
-{{--                                                    <option value="5"> 5</option>--}}
-{{--                                                    <option value="6"> 6</option>--}}
-{{--                                                </select>--}}
-{{--                                            </div>--}}
                                         </div>
                                     </div>
 {{--                                    <div class="custom-input-group">--}}
