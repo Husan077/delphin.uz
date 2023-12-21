@@ -15,9 +15,9 @@ class CreateClickTransactionsTable extends Migration
     {
         Schema::create('click_transactions', function (Blueprint $table) {
             $table->id();
-            $table->integer('click_trans_id');
-            $table->integer('service_id');
-            $table->integer('click_paydoc_id');
+            $table->bigInteger('click_trans_id');
+            $table->bigInteger('service_id');
+            $table->bigInteger('click_paydoc_id');
             $table->string('merchant_trans_id', 255);
             $table->float('amount', 8, 2);
             $table->integer('action');
