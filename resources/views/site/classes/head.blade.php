@@ -3,11 +3,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:site_name" content="Delphin.uz" />
+    <meta name="google-site-verification" content="XJh0kNNRaLp-EVY2MlcrNX5Md7YdbYo6sAdgxbErZ5c" />
     <meta property="og:url" content="{{ url()->current() }}"/>
     @yield('meta')
-
-    <meta name="google-site-verification" content="XJh0kNNRaLp-EVY2MlcrNX5Md7YdbYo6sAdgxbErZ5c" />
-
     {{--internet icon logo--}}
     <link rel="icon" type="image/png" href="{{ asset('assets/images/logo/16.png') }}" sizes="16x16">
     <link rel="icon" type="image/png" href="{{ asset('assets/images/logo/32.png') }}" sizes="32x32">

@@ -3,11 +3,11 @@
     <title>{{ $slug->{ 'title_' . $locale } }}</title>
     <meta name="robots" content="index, follow">
     <meta property="keywords" content="Туры в ташкенте, Тур агенства в ташкенте, Tur agenstva, Turkiya Travel, Travel, Билеты Билет Туркия"/>
-    @isset($slug->{ 'address_' . $locale })
-        <meta property="description" content="{{ $slug->{ 'address_' . $locale } }}"/>
+    @isset($settings->{ 'address_' . $locale })
+        <meta property="description" content="{{ $settings->{ 'address_' . $locale } }}"/>
     @endisset
-    @isset($slug->{ 'address_' . $locale })
-        <meta property="og:description" content="{{ $slug->{ 'address_' . $locale } }}"/>
+    @isset($settings->{ 'address_' . $locale })
+        <meta property="og:description" content="{{ $settings->{ 'address_' . $locale } }}"/>
     @endisset
     <meta property="og:title" content="Delphin.uz - @lang('main.header')"/>
     <meta property="og:keywords" content="Туры в ташкенте, Тур агенства в ташкенте, Tur agenstva, Turkiya Travel, Travel, Билеты Билет Туркия"/>
